@@ -1,0 +1,244 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+/*background-color:rgba(250, 202, 46, 0.938)--type of yellow;
+background-color:#ec7e8d--lite pink,
+#a334e3--lite voilet;
+#4be3db-- lite blue,#0fe5ec --skyblue;
+#ec7282 --lite red*/
+
+/* navigation bar*/
+#mnnav{
+    display:inline-block;
+    margin:4px 4px;
+    
+    width:99%;
+    
+}
+/* navigation bar with hamburgur menu*/
+#mnbar{
+    display:flex;
+    border:2px solid peachpuff;
+    border-radius:5px;
+    height: 60px;
+    box-shadow: 4px 2px 2px 2px whitesmoke;
+}
+    
+
+#mnbar i{
+    font-size:28px;
+    margin:6px;
+    text-align: center;
+    padding:6px;
+    cursor:pointer;
+    color:#f194a0;
+
+}
+/*menu bar title*/
+#mnbar span{
+    display: inline-block;
+    margin-left:4px;
+    font-family:'Pacifico',sans-serif;
+    font-weight: 500;
+    font-size:30px;
+    color:#f8102f;
+    padding:4px;
+    transform:translateY(-6px);
+}
+/* dishes menu list--accessed by Jquery*/
+#mnlist{
+    display:inline-block;
+    border:2px solid white;
+    background-color: rgb(255, 207, 115);
+    text-align: center;
+    width:98%;
+    margin:2px;
+    padding:4px;
+    position:absolute;
+    z-index: 1;
+    transition:2s display 0.2ms ease-in;
+}
+#mnlist a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+#mnlist li{
+    display:block;
+    font-size:25px;
+    font-weight:300;
+    font-family:Piedra,'sanserif';
+    color:white;
+    
+    padding:6px 8px;
+    border-radius:5px;
+    border:2px solid transparent;
+
+
+
+}
+ #mnlist li:hover{
+    color:black;
+    
+}
+
+/*navigation bar ends*/
+/* header --displays poster with motto*/
+#hdr{
+    display:inline-block;
+    height:450px;
+    margin:10px;
+    padding:5px;
+    overflow: hidden;
+    
+}
+@media only screen and(max-width:350px){
+    #hdr {
+        height:700px;
+        
+    }
+}
+#hdr figure{
+    display:flex;
+    flex-wrap:wrap;
+    height:440px;
+    margin-left:5%;
+    
+}
+#hdr  figure img{
+    height:383px;
+    width:40%;
+    flex-basis:350px;
+    
+    margin:8px;
+    padding:5px;
+  }
+  @media only screen and(max-width:350px){
+    #hdr figure img{
+        height:200px;
+        width:20%;
+    }
+}
+
+#hdr figcaption{
+    display:inline-block;
+    flex:1 1 300px;
+    color:#f8102f;
+    
+}
+
+#hdr figcaption div{
+    font-family:Pacifico,'sanserif';
+    font-size:28px;
+    padding:40px;
+    
+}
+
+/* container --displaying item*/
+/* basic template to create a container[1][4]*/
+/*background-color:rgba(250, 202, 46, 0.938)--type of yellow;
+background-color:#ec7e8d--lite pink,
+#a334e3--lite voilet;
+#4be3db-- lite blue,#0fe5ec --skyblue;
+#ec7282 --lite red
+ background-color:rgb(61, 136, 61);---exact ok green*/
+
+.row1 {
+        display:flex;
+        flex-wrap: wrap;
+        margin:auto;
+        
+}
+.row1 .col1,.row1 .col2, .row1 .col3,.row1 .col4{
+    display:inline-block;
+    height:400px;
+    width:270px;
+    margin:10px 20px;
+    padding:4px;
+    border:1px solid whitesmoke;
+    border-radius: 24px;
+    box-shadow:2px 2px 2px 2px whitesmoke;
+
+}
+.row1 .col1 img,.row1 .col2 img,.row1 .col3 img
+,.row1 .col4 img{
+    height:200px;
+    width:100%;
+    filter:opacity(67%);
+    border-radius:20px;
+    
+}
+.row1 .col1 h4,
+.row1 .col2 h4,
+.row1 .col3 h4,
+.row1 .col4 h4{
+    font-family:PT Sans,'serif';
+    font-size:22px;
+    font-weight: 500;
+    color:black;
+    margin:5px;
+}
+.row1 .col1 a,.row1 .col2 a,
+.row1 .col3 a,.row1 .col4 a{
+    text-decoration: none;
+    
+}
+
+.row1 .col1 a button,.row1 .col2 a button,
+.row1 .col3 a button,.row1 .col4 a button
+{
+    display:inline-block;
+    padding:10px 12px;
+    
+    font-family:'serif';
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+    background-color:rgb(248, 183, 63);
+    outline:none;
+    border-radius:10px;
+    border:1px solid white;
+    cursor:pointer;
+
+}
+/*on succesfully adding item to the list*/
+section{
+    position: relative;
+}
+.sfl{
+    display: block;
+    color :white;
+    font-family:'Pacifico',serif;
+    background-color:rgb(48, 102, 48);
+    border-radius: 5px;
+    text-align:center;
+    font-size:22px;
+    position: fixed;
+    z-index:1;
+    font-weight:700;
+    padding:10px 12px;
+    margin:5px 4px;
+    transform: translateY(20%);
+    transition: display 1s 0.1ms ease-in-out;
+}
+
+
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}
+.topicItems{
+    display:inline-block;
+    position: relative;
+    margin:4px;
+}
+.topicItems h3{
+    margin:10px 20px;
+    font-size: 30px;
+    font-family:'Pacifico','sans-serif';
+    font-weight: 500;
+}
